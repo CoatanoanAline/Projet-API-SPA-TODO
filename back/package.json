@@ -1,0 +1,22 @@
+{
+  "name": "otodo-back",
+  "description": "Otodo backend",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "db:reset": "psql -U otodo -d otodo -f ./data/create_tables.sql"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "nodemon": "^3.1.4"
+  }
+}

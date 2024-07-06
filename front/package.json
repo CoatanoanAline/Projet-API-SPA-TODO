@@ -1,0 +1,15 @@
+{
+  "name": "otodo-front",
+  "description": "Otodo frontend",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.6.0"
+  }
+}

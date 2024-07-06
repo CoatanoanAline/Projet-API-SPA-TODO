@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TITLE -->
+    <title>O'Todo</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' stroke-width='1.5' height='24px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' color='%23000000'%3E%3Cpath d='M9 6L20 6' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M3.80002 5.79999L4.60002 6.59998L6.60001 4.59999' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M3.80002 11.8L4.60002 12.6L6.60001 10.6' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M3.80002 17.8L4.60002 18.6L6.60001 16.6' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M9 12L20 12' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M9 18L20 18' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E" />
+
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/20e644323d.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JS -->
+    <script defer src="./assets/js/app.js" type="module"></script>
+</head>
+
+<body>
+
+    <div class="container is-max-desktop p-3">
+        <h1 class="title is-3 has-text-centered">Mes tâches à faire</h1>
+
+       <div class="tasks">
+
+       </div>
+
+        <form class="box mt-5" id="create-task">
+            <div class="field">
+                <label class="label">Nouvelle tâche à faire</label>
+                
+                <div class="control">
+                    <input class="input" type="text" name="name" placeholder="Nom de la tâche">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-link">Ajouter la tâche</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+    <template class="template-task">
+        <div class="box task">
+            <span class="task__name"></span>
+            <form class="task__edit-form">
+                <input class="input is-small task__input-id" name="id" type="hidden">
+                <input class="input is-small task__input-name" name="name" type="text">
+                <button class="button is-link is-small task__button-edit">Ok</button>
+            </form>
+            <div class="task__actions">
+                <span class="icon task__edit">
+                    <i class="fas fa-edit"></i>
+                </span>
+
+                <span class="icon task__delete">
+                    <i class="fas fa-trash"></i>
+                </span>
+            </div>
+        </div>
+
+    </template>
+</body>
+
+</html>

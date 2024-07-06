@@ -1,0 +1,12 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__edit, .task__delete {
+    cursor: pointer;
+}
+
+.task__edit-form {
+    display: none;
+}
